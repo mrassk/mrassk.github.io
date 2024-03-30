@@ -23,17 +23,26 @@
 
 
 <body>
+
    <h1>Mr. ASSK<br><hr bgcolor="white"> </h1>
+<div id="yazilar">
  <h2>Hi I'm Mr.Assk. I am the owner of this page and photos. I'll give some of my sites link here.And if you want to download my moon photographs only click top of them.<br>-And I am a study-<br><br>
  <ul>
-     <li>
- <a href="https://bvlog.netlify.app/">Bvlog</a></li>
- <li>
-     <a href="https://tarifologanne.netlify.app/">Tarifolog Mom</a>
- </li>
- <li><a href="https://assk.netlify.app/en.html">Assk(my contact page)</a></li>
- </ul>
- And now I'll give some of my moon fotographs:<br>
+    <li>
+        <a href="https://saatiniz.netlify.app/">Saat</a>
+    </li>
+    <li>
+        <a href="https://bvlog.netlify.app/">Bvlog</a>
+    </li>
+    <li>
+        <a href="https://tarifologanne.netlify.app/">Tarifolog Mom</a>
+    </li>
+
+    <li>
+        <a href="https://assk.netlify.app/en.html">Assk(my contact page)</a>
+    </li>
+ </ul></div>
+ And now I'll give some of my moon fotographs:</br><br>
  <div class="container">
 <a href="IMG-20230503-WA0004.jpg" download="moon_wallpaper"><img src="IMG-20230503-WA0004.jpg" alt=""></a> <hr><br>
 <a href="IMG-20230525-WA0005.jpg"download="moon_wallpaper"><img src="IMG-20230525-WA0005.jpg" alt=""></a><hr><br>
@@ -58,20 +67,35 @@
        .container{
            border: solid 1px white;
            border-radius: 10px;
+           text-align: center;
        }
-             @media (min-width: 500px) {
+         @media (min-width: 500px) {
   
-        .container{
+         .container{
            border: solid 1px white;
            border-radius: 10px;
-           width: 60%;
-          text-align:center;
-       }
-  
+           margin-top: 5px;
+           width: 50%;
+           position: absolute;
+           right: 25%;
+           left: 25%;
+           text-align: center;
+        }        
+
+        }
+        @media (min-width: 750px) {
+        #yazilar{
+            text-align: center;
+            width: 50%;
+            position: relative;
+            left: 25%;
+        }
+
+        }
         h1{
             text-align: center;
             color: white;
-          font-family: 'Source Code Pro', monospace; 
+            font-family: 'Source Code Pro', monospace; 
         }
         h2{
             text-align: center;
@@ -80,6 +104,7 @@
         }
         body {
             background: black;
+            
         }
         a{
             color: #eaeaff;
